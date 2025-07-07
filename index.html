@@ -50,36 +50,57 @@
   </nav>
 
   <!-- Hero Carousel -->
-  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active bg-dark text-white d-flex align-items-center" style="min-height: 400px;">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <span class="badge bg-warning text-dark mb-2">50% Off</span>
-              <h1 class="display-4 fw-bold">Fashion sale<br>for women's</h1>
-              <p class="lead">Elevate your every day. Style that speaks volumes.</p>
-              <a href="#" class="btn btn-primary">Shop Now</a>
-            </div>
-            <div class="col-md-6 text-end">
-              <img src="hero-girl.png" alt="Woman yelling" class="img-fluid">
-            </div>
-          </div>
-        </div>
+<!-- Bootstrap Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+  </div>
+
+  <!-- Carousel Inner -->
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active position-relative">
+      <img  src="/ALL IN ONE.jpg" class="d-block w-100" alt="Slide 1" style="object-fit: cover; height: 400px;">
+
+      <!-- Button Overlay -->
+      <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+        <a target="_blank" href="https://example.com" class="btn btn-primary">Explore More</a>
       </div>
     </div>
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item position-relative">
+      <img src="/15599.jpg" class="d-block w-100" alt="Slide 2" style="object-fit: cover; height: 400px;">
+
+      <!-- Button Overlay -->
+      <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+        <a  target="_blank" href="https://example.com/page2" class="btn btn-success">Shop Now</a>
+      </div>
     </div>
   </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
 
   <!-- Category Grid -->
   <div class="container mt-4">
     <div class="row g-3">
       <div class="col-md-3">
         <div class="card p-2">
-          <span class="badge bg-dark text-white mb-1">35%</span>
+          <span class="badge bg-dark text-white mb-1">15%</span>
           <h6>T-shirts <strong>Men's</strong></h6>
           <small>Items (16)</small>
           <div class="d-flex gap-1 mt-2">
@@ -91,7 +112,7 @@
       </div>
       <div class="col-md-3">
         <div class="card p-2">
-          <span class="badge bg-dark text-white mb-1">35%</span>
+          <span class="badge bg-dark text-white mb-1">10%</span>
           <h6>T-shirts <strong>Drop</strong></h6>
           <small>Items (16)</small>
           <div class="d-flex gap-1 mt-2">
@@ -135,6 +156,51 @@
     <h4 class="fw-bold">New <span class="text-primary">Arrivals</span></h4>
   </div>
   <div class="row g-4">
+    <div class="col-md-3">
+      <div class="card">
+        <img src="tshirt.jpg" class="card-img-top" alt="T-shirt">
+        <div class="card-body">
+          <span class="badge bg-primary">TRENDING</span>
+          <p class="text-muted small">T-SHIRT</p>
+          <h6 class="card-title">Cotton fabric T-shirt</h6>
+          <p><strong>$120</strong> <del>$130</del></p>
+          <div class="d-flex gap-1">
+            <span class="dot bg-secondary"></span>
+            <span class="dot bg-success"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="tshirt.jpg" class="card-img-top" alt="T-shirt">
+        <div class="card-body">
+          <span class="badge bg-primary">TRENDING</span>
+          <p class="text-muted small">T-SHIRT</p>
+          <h6 class="card-title">Cotton fabric T-shirt</h6>
+          <p><strong>$120</strong> <del>$130</del></p>
+          <div class="d-flex gap-1">
+            <span class="dot bg-secondary"></span>
+            <span class="dot bg-success"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="tshirt.jpg" class="card-img-top" alt="T-shirt">
+        <div class="card-body">
+          <span class="badge bg-primary">TRENDING</span>
+          <p class="text-muted small">T-SHIRT</p>
+          <h6 class="card-title">Cotton fabric T-shirt</h6>
+          <p><strong>$120</strong> <del>$130</del></p>
+          <div class="d-flex gap-1">
+            <span class="dot bg-secondary"></span>
+            <span class="dot bg-success"></span>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="col-md-3">
       <div class="card">
         <img src="tshirt.jpg" class="card-img-top" alt="T-shirt">
