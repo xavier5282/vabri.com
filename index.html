@@ -1,273 +1,265 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vabri.com</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <style>
-    .dot {
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      display: inline-block;
-    }
-    .bg-success {
-    background-color: #0a2520 !important;
-    }
-  </style>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>vabri.com</title>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+      <style>
+        .dot {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          display: inline-block;
+        }
+        body {
+        padding-top: 70px; /* Adjust based on the height of your navbar */
+        }
+      </style>
+    </head>
+    <body>
 
-<!-- SECTION 1: Hero Banner with Categories -->
-<section class="container-fluid p-0">
-  <!-- Top Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white px-4">
-    <a class="navbar-brand" href="#">
-      <img src="logo.png" alt="vabri Logo" width="70" class="me-2">
-    </a>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" role="button" >Blog</a>
-        </li> 
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" role="button" >Contact</a>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <!-- SECTION 1: Hero Banner with Categories -->
+    <section class="container-fluid p-0">
+      <!-- Top Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="vabri Logo" width="70" class="me-2">
+        </a>
+        <!-- Toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active text-success" href="#">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-  <!-- Hero Carousel -->
-<!-- Bootstrap Carousel -->
-<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-  </div>
-
-  <!-- Carousel Inner -->
-  <div class="carousel-inner">
-    <!-- Slide 1 -->
-    <div class="carousel-item active position-relative">
-      <img  src="/ALL IN ONE.jpg" class="d-block w-100" alt="Slide 1" style="object-fit: cover; height: 400px;">
-
-      <!-- Button Overlay -->
-      <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-        <a target="_blank" href="https://example.com" class="btn btn-primary">Explore More</a>
+      <!-- Hero Carousel -->
+    <!-- Bootstrap Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
       </div>
-    </div>
 
-    <!-- Slide 2 -->
-    <div class="carousel-item position-relative">
-      <img src="/15599.jpg" class="d-block w-100" alt="Slide 2" style="object-fit: cover; height: 400px;">
+      <!-- Carousel Inner -->
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active position-relative">
+          <img  src="/ALL IN ONE.jpg" class="d-block w-100" alt="Slide 1" style="object-fit: cover; height: 400px;">
 
-      <!-- Button Overlay -->
-      <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-        <a  target="_blank" href="https://example.com/page2" class="btn btn-success">Shop Now</a>
-      </div>
-    </div>
-  </div>
+          <!-- Button Overlay -->
+          <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+            <a target="_blank" href="https://example.com" class="btn btn-primary">Explore More</a>
+          </div>
+        </div>
 
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+        <!-- Slide 2 -->
+        <div class="carousel-item position-relative">
+          <img src="/15599.jpg" class="d-block w-100" alt="Slide 2" style="object-fit: cover; height: 400px;">
 
-
-
-
-  <!-- Category Grid -->
-  <div class="container mt-4">
-    <div class="row g-3">
-      <div class="col-md-3">
-        <div class="card p-2">
-          <span class="badge bg-success text-white mb-1">15%</span>
-          <h6>T-shirts <strong>Men's</strong></h6>
-          <small>Items (16)</small>
-          <div class="d-flex gap-1 mt-2">
-            <img src="vabri_image1.jpeg" class="img-fluid rounded w-25" alt="small Image">
-            <img src="vabri_image2.jpeg" class="img-fluid rounded w-25" alt="small Image">
-            <img src="vabri_image3.jpeg" class="img-fluid rounded w-25" alt="small Image">
+          <!-- Button Overlay -->
+          <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+            <a  target="_blank" href="https://example.com/page2" class="btn btn-success">Shop Now</a>
           </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card p-2">
-          <span class="badge bg-success text-white mb-1">10%</span>
-          <h6>T-shirts <strong>Drop</strong></h6>
-          <small>Items (16)</small>
-          <div class="d-flex gap-1 mt-2">
-            <img src="clothes1.jpg" class="img-fluid rounded" alt="...">
-            <img src="clothes2.jpg" class="img-fluid rounded" alt="...">
-            <img src="clothes3.jpg" class="img-fluid rounded" alt="...">
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card p-2">
-          <span class="badge bg-success text-white mb-1">35%</span>
-          <h6>Tote <strong>Bags</strong></h6>
-          <small>Items (16)</small>
-          <div class="d-flex gap-1 mt-2">
-            <img src="clothes1.jpg" class="img-fluid rounded" alt="...">
-            <img src="clothes2.jpg" class="img-fluid rounded" alt="...">
-            <img src="clothes3.jpg" class="img-fluid rounded" alt="...">
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card p-2">
-          <span class="badge bg-success text-white mb-1">35%</span>
-          <h6>Fashion <strong>Clothes</strong></h6>
-          <small>Items (16)</small>
-          <div class="d-flex gap-1 mt-2">
-            <img src="clothes1.jpg" class="img-fluid rounded" alt="...">
-            <img src="clothes2.jpg" class="img-fluid rounded" alt="...">
-            <img src="clothes3.jpg" class="img-fluid rounded" alt="...">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- SECTION 2: New Arrivals -->
-<section class="container py-5">
-  <div class="d-flex justify-content-between align-items-center mb-4">
-    <h4 class="fw-bold">New <span class="text-success ">Arrivals</span></h4>
-  </div>
-  <div class="row g-4">
-    <div class="col-md-3">
-      <div class="card">
-        <img src="tshirt.jpg" class="card-img-top" alt="T-shirt">
-        <div class="card-body">
-          <span class="badge bg-success ">TRENDING</span>
-          <p class="text-muted small">T-SHIRT</p>
-          <h6 class="card-title">Cotton fabric T-shirt</h6>
-          <p><strong>$120</strong> <del>$130</del></p>
-          <div class="d-flex gap-1">
-            <span class="dot bg-secondary"></span>
-            <span class="dot bg-success"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card">
-        <img src="tshirt.jpg" class="card-img-top" alt="T-shirt">
-        <div class="card-body">
-          <span class="badge bg-success">TRENDING</span>
-          <p class="text-muted small">T-SHIRT</p>
-          <h6 class="card-title">Cotton fabric T-shirt</h6>
-          <p><strong>$120</strong> <del>$130</del></p>
-          <div class="d-flex gap-1">
-            <span class="dot bg-secondary"></span>
-            <span class="dot bg-success"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card">
-        <img src="tshirt.jpg" class="card-img-top" alt="T-shirt">
-        <div class="card-body">
-          <span class="badge bg-success">TRENDING</span>
-          <p class="text-muted small">T-SHIRT</p>
-          <h6 class="card-title">Cotton fabric T-shirt</h6>
-          <p><strong>$120</strong> <del>$130</del></p>
-          <div class="d-flex gap-1">
-            <span class="dot bg-secondary"></span>
-            <span class="dot bg-success"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card">
-        <img src="tshirt.jpg" class="card-img-top" alt="T-shirt">
-        <div class="card-body">
-          <span class="badge bg-success">TRENDING</span>
-          <p class="text-muted small">T-SHIRT</p>
-          <h6 class="card-title">Cotton fabric T-shirt</h6>
-          <p><strong>$120</strong> <del>$130</del></p>
-          <div class="d-flex gap-1">
-            <span class="dot bg-secondary"></span>
-            <span class="dot bg-success"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Features -->
-  <div class="row mt-5 text-center">
-    <div class="col-md-3">
-      <i class="bi bi-truck fs-2 text-success"></i>
-      <h6 class="fw-bold mt-2">Free Shipping</h6>
-      <p class="text-muted">Free shipping on all US orders or above $200</p>
-    </div>
-    <div class="col-md-3">
-      <i class="bi bi-headset fs-2 text-success"></i>
-      <h6 class="fw-bold mt-2">24x7 Support</h6>
-      <p class="text-muted">Live support 7 days a week</p>
-    </div>
-    <div class="col-md-3">
-      <i class="bi bi-arrow-left-right fs-2 text-success"></i>
-      <h6 class="fw-bold mt-2">30 Days Return</h6>
-      <p class="text-muted">Return it within 30 days</p>
-    </div>
-    <div class="col-md-3">
-      <i class="bi bi-shield-check fs-2 text-success"></i>
-      <h6 class="fw-bold mt-2">Payment Secure</h6>
-      <p class="text-muted">Safe & encrypted checkout</p>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 3: Women's Collection -->
-<section class="container-fluid py-5 bg-light">
-  <div class="container">
-    <div class="row mb-4 align-items-center">
-      <div class="col-md-6">
-        <img src="women-fashion.jpg" alt="Women's Collection" class="img-fluid rounded">
-      </div>
-      <div class="col-md-6 text-end">
-        <h1 class="display-6 fw-bold text-success">FASHION COLLECTION</h1>
-        <p class="text-muted">New Stylish Shirts, Pants & Accessories</p>
-        <a href="#" class="btn btn-warning">Book Now</a>
-      </div>
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <!-- Deal Countdown + Products -->
-    <div class="mb-3">
-      <h5 class="fw-bold">Day Of The <span class="text-success">Deals</span></h5>
-      <span class="badge bg-light text-dark">450 Days 20:44:16</span>
-    </div>
 
-    <div class="row g-4">
-      <!-- Repeat similar card layout from New Arrivals -->
-    </div>
-  </div>
-</section>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+
+      <!-- Category Grid -->
+      <div class="container mt-4">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card p-3"> <!-- Removed extra padding -->
+              <span class="badge bg-success text-white mb-1">15%</span>
+              <h6>All <strong>T-shirts</strong></h6>
+              <small>Items (16)</small>
+              <div class="d-flex justify-content-center gap-1 mt-2"> <!-- Centered images -->
+                <img src="vabri_image1.jpeg" class="img-fluid rounded w-25" alt="small Image">
+                <img src="vabri_image2.jpeg" class="img-fluid rounded w-25" alt="small Image">
+                <img src="vabri_image3.jpeg" class="img-fluid rounded w-25" alt="small Image">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3"> <!-- Removed extra padding -->
+              <span class="badge bg-success text-white mb-1">15%</span>
+              <h6>Tote <strong>Bag</strong></h6>
+              <small>Items (16)</small>
+              <div class="d-flex justify-content-center gap-1 mt-2"> <!-- Centered images -->
+                <img src="vabri_image1.jpeg" class="img-fluid rounded w-25" alt="small Image">
+                <img src="vabri_image2.jpeg" class="img-fluid rounded w-25" alt="small Image">
+                <img src="vabri_image3.jpeg" class="img-fluid rounded w-25" alt="small Image">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3"> <!-- Removed extra padding -->
+              <span class="badge bg-success text-white mb-1">15%</span>
+              <h6>Phone <strong>Cover</strong></h6>
+              <small>Items (16)</small>
+              <div class="d-flex justify-content-center gap-1 mt-2"> <!-- Centered images -->
+                <img src="vabri_image1.jpeg" class="img-fluid rounded w-25" alt="small Image">
+                <img src="vabri_image2.jpeg" class="img-fluid rounded w-25" alt="small Image">
+                <img src="vabri_image3.jpeg" class="img-fluid rounded w-25" alt="small Image">
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: New Arrivals -->
+    <section class="container py-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="fw-bold">New <span class="text-success ">Arrivals</span></h4>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="vabri_image1.jpeg" class="card-img-top" alt="T-shirt">
+            <div class="card-body">
+              <span class="badge bg-success ">TRENDING</span>
+              <p class="text-muted small">T-SHIRT</p>
+              <h6 class="card-title">Cotton fabric T-shirt</h6>
+              <p><strong>৳120</strong> <del>৳130</del></p>
+              <div class="d-flex gap-1">
+                <span class="dot bg-secondary"></span>
+                <span class="dot bg-success"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="vabri_image3.jpeg" class="card-img-top" alt="T-shirt">
+            <div class="card-body">
+              <span class="badge bg-success">TRENDING</span>
+              <p class="text-muted small">T-SHIRT</p>
+              <h6 class="card-title">Cotton fabric T-shirt</h6>
+              <p><strong>৳120</strong> <del>৳130</del></p>
+              <div class="d-flex gap-1">
+                <span class="dot bg-secondary"></span>
+                <span class="dot bg-success"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="vabri_image2.jpeg" class="card-img-top" alt="T-shirt">
+            <div class="card-body">
+              <span class="badge bg-success">TRENDING</span>
+              <p class="text-muted small">T-SHIRT</p>
+              <h6 class="card-title">Cotton fabric T-shirt</h6>
+              <p><strong>৳420</strong> <del>৳550</del></p>
+              <div class="d-flex gap-1">
+                <span class="dot bg-secondary"></span>
+                <span class="dot bg-success"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="vabri_image4.jpeg" class="card-img-top" alt="T-shirt">
+            <div class="card-body">
+              <span class="badge bg-success">TRENDING</span>
+              <p class="text-muted small">T-SHIRT</p>
+              <h6 class="card-title">Cotton fabric T-shirt</h6>
+              <p><strong>৳220</strong> <del>৳330</del></p>
+              <div class="d-flex gap-1">
+                <span class="dot bg-secondary"></span>
+                <span class="dot bg-success"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="row mt-5 text-center">
+        <div class="col-md-3">
+          <i class="bi bi-truck fs-2 text-success"></i>
+          <h6 class="fw-bold mt-2">Free Shipping</h6>
+          <p class="text-muted">Free shipping on all US orders or above $200</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-headset fs-2 text-success"></i>
+          <h6 class="fw-bold mt-2">24x7 Support</h6>
+          <p class="text-muted">Live support 7 days a week</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-arrow-left-right fs-2 text-success"></i>
+          <h6 class="fw-bold mt-2">30 Days Return</h6>
+          <p class="text-muted">Return it within 30 days</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-shield-check fs-2 text-success"></i>
+          <h6 class="fw-bold mt-2">Payment Secure</h6>
+          <p class="text-muted">Safe & encrypted checkout</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Women's Collection -->
+    <section class="container-fluid py-5 bg-light">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-6">
+            <img src="women-fashion.jpg" alt="Women's Collection" class="img-fluid rounded">
+          </div>
+          <div class="col-md-6 text-end">
+            <h1 class="display-6 fw-bold text-success">FASHION COLLECTION</h1>
+            <p class="text-muted">New Stylish Shirts, Pants & Accessories</p>
+            <a href="#" class="btn btn-warning">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Deal Countdown + Products -->
+        <div class="mb-3">
+          <h5 class="fw-bold">Day Of The <span class="text-success">Deals</span></h5>
+          <span class="badge bg-light text-dark">450 Days 20:44:16</span>
+        </div>
+
+        <div class="row g-4">
+          <!-- Repeat similar card layout from New Arrivals -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
